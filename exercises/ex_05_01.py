@@ -5,8 +5,11 @@ while True:
     sval = input('Enter a number: ')
     if sval == 'done':
         break
-    fval = float(sval)
-    print(fval)
+    try:
+        fval = float(sval)
+    except:
+        print('Invalid Input')
+        continue
     num = num + 1
     tot = tot + fval
 

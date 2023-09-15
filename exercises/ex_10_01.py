@@ -26,8 +26,16 @@ for lin in hand:
 
 # print(di)
 
-x = di.items()
-print(x)
+tmp = list()
+for k, v in di.items():
+    newt = (v, k)
+    tmp.append(newt)
+
+print('Flipped', tmp)
+
+tmp_sorted = sorted(tmp)
+
+print('Sorted', tmp_sorted)
 
 largest = -1
 for k, v in di.items():

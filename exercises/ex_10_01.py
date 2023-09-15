@@ -33,9 +33,12 @@ for k, v in di.items():
 
 print('Flipped', tmp)
 
-tmp_sorted = sorted(tmp)
+tmp_sorted = sorted(tmp, reverse=True)
 
 print('Sorted', tmp_sorted)
+
+for v, k in tmp_sorted[:5]:
+    print(k, v)
 
 largest = -1
 for k, v in di.items():
